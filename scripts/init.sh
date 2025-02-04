@@ -37,10 +37,6 @@ sed -i '/redis/d' ./Procfile
 bench new-site dev.localhost \
 --mariadb-root-password 123 \
 --admin-password admin \
---no-mariadb-socket
-bench new-site dev.localhost \
---mariadb-root-password 123 \
---admin-password admin \
 --no-mariadb-socket \
 --force
 
