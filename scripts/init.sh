@@ -38,6 +38,12 @@ bench new-site dev.localhost \
 --mariadb-root-password 123 \
 --admin-password admin \
 --no-mariadb-socket
+bench new-site dev.localhost \
+--mariadb-root-password 123 \
+--admin-password admin \
+--no-mariadb-socket \
+--force
+
 
 bench --site dev.localhost set-config developer_mode 1
 bench --site dev.localhost clear-cache
